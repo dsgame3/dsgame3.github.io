@@ -85,8 +85,17 @@ p {
     font-size: 75px;
 }
 .gamechild:hover {
-    animation: colorFade 1s infinite alternate;
+    animation: fadeToGreen 1s forwards;
 }
+@keyframes fadeToGreen {
+    0% {
+    }
+
+    100% {
+        color: #00FF00; 
+    }
+}
+
 
 @keyframes colorFade {
     0% {
