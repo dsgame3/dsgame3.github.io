@@ -34,16 +34,19 @@
 
 <body>
     <div class="container mx-auto my-10 p-5 rounded-xl bg-gray-100 shadow-lg relative">
-        <iframe id="realframe" src="https://www.example.com" width="100%" height="600" class="rounded-xl" style="border: none;"></iframe>
+        <iframe id="realframe" src="https://www.example.com" width="100%" height="600" class="rounded-xl"
+            style="border: none;"></iframe>
         <button class="fullscreen-btn" onclick="toggleFullscreen()">
             <i class="fas fa-expand"></i>
         </button>
     </div>
 </body>
 <script>
-    let url = 'tiktok.com';
-    
-    eval(atob('IGZ1bmN0aW9uIGdvdG8odXJsKSB7CiAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3JlYWxmcmFtZScpLnNyYyA9ICdodHRwczovL3ByeDJuZXctZHlsYW4tMjUteGp2OXptcXN0Zmtncm9oOGJ3cGNlZG55bGF1NjNoNzI4MS5uZXR0c3BlbmQubGl2ZS8/cnVybD0nICsgdXJsOwogICAgfQogICAgZ290byh1cmwpOw=='))
+    window.onload = (event) => {
+        let url = 'tiktok.com';
+        eval(atob('IGZ1bmN0aW9uIGdvdG8odXJsKSB7CiAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3JlYWxmcmFtZScpLnNyYyA9ICdodHRwczovL3ByeDJuZXctZHlsYW4tMjUteGp2OXptcXN0Zmtncm9oOGJ3cGNlZG55bGF1NjNoNzI4MS5uZXR0c3BlbmQubGl2ZS8/cnVybD0nICsgdXJsOwogICAgfQogICAgZ290byh1cmwpOw=='))
+    };
+
     function toggleFullscreen() {
         let iframe = document.getElementById('realframe');
         if (!document.fullscreenElement) {
